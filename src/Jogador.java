@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Jogador {
 	
 	String nome;
-	String jogada;
+	int jogada;
+	String[] escolhas = {"Pedra", "Papel", "Tesoura"};
 	
 	
 	public Jogador(String nome) {
@@ -21,15 +22,16 @@ public class Jogador {
 	public void setJogada() {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Olá jogador " + this.nome + " escolha Papel, Pedra, Tesoura");
-		this.jogada = scanner.nextLine();
+		System.out.println("-=--=--=--=--=--=--=--=--=--=--=--=--=-");
+		System.out.print("Olá jogador " + this.nome + " faça sua jogada\n1. Pedra\n2. Papel\n3. Tesoura\nSua escolha: ");
+		this.jogada = scanner.nextInt();
+		System.out.println("Muito bem " + this.nome + ", você jogou " + escolhas[jogada - 1] );
 		
 	}
 	
-	public String getJogada() {
+	public int getJogada() {
 		return this.jogada;
 	}
 	
-
 
 }

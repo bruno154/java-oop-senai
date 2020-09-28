@@ -9,40 +9,40 @@ public class Jogo {
 	}
 
 
-	public String getResultado(String JogadaJogador1, String JogadaJogador2) {
+	public String getResultado(int JogadaJogador1, int JogadaJogador2) {
 		
-		if(JogadaJogador1=="Papel" && JogadaJogador2=="Pedra") {
-			this.resultado = "Jogador1 Ganhou!!!";	
+		if(JogadaJogador1== 1 && JogadaJogador2== 1) {
+			this.resultado = "Empate!!!";	
 			
-		} else if (JogadaJogador1 == "Tesoura" && JogadaJogador2=="Pedra") {
+		} else if (JogadaJogador1 == 1 && JogadaJogador2== 2) {
 			this.resultado = "Jogador2 Ganhou!!!";
 			return this.resultado;
 			
-		} else if (JogadaJogador1== "Pedra" && JogadaJogador2=="Pedra") {
-			this.resultado = "Empate!!!";
+		} else if (JogadaJogador1 == 1 && JogadaJogador2 == 3) {
+			this.resultado = "Jogador1 Ganhou!!!";
 			return this.resultado;
-			
-		}else if (JogadaJogador1=="Pedra" && JogadaJogador2=="Papel") {
-			this.resultado = "Jogador2 Ganhou!!!";
-			return this.resultado;
-			
-		}else if (JogadaJogador1 =="Pedra" && JogadaJogador2=="Tesoura") {
+		
+		}else if (JogadaJogador1== 2 && JogadaJogador2== 1) {
 			this.resultado = "Jogador1 Ganhou!!!";
 			return this.resultado;
 			
-		}else if (JogadaJogador1 == "Papel" && JogadaJogador2=="Papel") {
+		}else if (JogadaJogador1 == 2 && JogadaJogador2== 2) {
 			this.resultado = "Empate!!!";
 			return this.resultado;
 			
-		}else if (JogadaJogador1 == "Papel" && JogadaJogador2=="Tesoura") {
+		}else if (JogadaJogador1 == 2 && JogadaJogador2== 3) {
 			this.resultado = "Jogador2 Ganhou!!!";
 			return this.resultado;
 			
-		}else if (JogadaJogador1 == "Tesoura" && JogadaJogador2=="Papel") {
+		}else if (JogadaJogador1 == 3 && JogadaJogador2== 1) {
+			this.resultado = "Jogador2 Ganhou!!!";
+			return this.resultado;
+			
+		}else if (JogadaJogador1 == 3 && JogadaJogador2== 2) {
 			this.resultado = "Jogador1 Ganhou!!!";
 			return this.resultado;
 			
-		}else if (JogadaJogador1 == "Tesoura" && JogadaJogador2=="Tesoura") {
+		}else if (JogadaJogador1 == 3 && JogadaJogador2== 3) {
 			this.resultado = "Empate!!!";
 			return this.resultado;
 			
